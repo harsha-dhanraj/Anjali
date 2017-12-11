@@ -1,0 +1,19 @@
+<button (click)="abcFindAllGateways()">Find All Gateway</button>
+
+<div *ngFor="let a of show_gateways">
+  Name:{{a.metadata.device_name}},<br> Type:{{a.metadata.device_type}},<br>
+  USER:{{a.metadata.uAPI}}<br>
+  EndNodes: 
+  <ol>
+    <li *ngFor="let b of a.endNodes">{{b}}</li>
+  </ol>
+</div>
+<H2>Add Gateway</H2>
+  <input type="text" placeholder="device name" [(ngModel)]="device_name" ><br>
+  <input type="text" placeholder="device type" [(ngModel)]="device_type">
+  <br>
+  <input type="text" placeholder="user API" [(ngModel)]="uAPI" ><br>
+  <input type="text" placeholder="End Node 1" [(ngModel)]="end_node1" ><br>
+  <input type="text" placeholder="End Node 2" [(ngModel)]="end_node2" ><br>
+  <button (click)="addGateways()">Add Gateway</button>
+<h1>{{show}}</h1>

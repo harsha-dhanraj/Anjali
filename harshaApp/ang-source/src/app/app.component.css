@@ -1,0 +1,39 @@
+H1{
+    background-color:#389900;
+    color:#333333;
+    text-align: center;
+}
+p{
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #63c8f0;
+    overflow: scroll;
+    color: #63c8f0;
+    text-overflow: clip;  
+}
+.root{
+    display: flex;
+}
+.first{
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 8px solid #222222;
+    background-color: #36e7d8;
+}
+.secod{
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 8px solid #444004;
+    background-color:rgb(235, 114, 70)
+
+}
+
+.myButton{
+    height: 40px;
+    width: 200px;
+    background-color: rgb(231, 206, 95);
+    border: 2px solid #4CAF50; 
+    color: #63c8f0; 
+}

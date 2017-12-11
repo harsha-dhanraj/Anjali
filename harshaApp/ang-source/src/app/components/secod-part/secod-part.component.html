@@ -1,0 +1,10 @@
+<h2>
+  This is first child
+</h2>
+<div *ngFor="let a of GATEWAYS">
+  Name:{{a.metadata.d_name}}, Type:{{<a href="" class="metadata"></a>.d_type}},
+  USER:{{a.metadata.uApi}}
+  <ol>
+    <li *ngFor="let b of a.endNodes">{{b}}</li>
+  </ol>
+</div>
